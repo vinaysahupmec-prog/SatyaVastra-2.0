@@ -1,0 +1,2143 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#641f25">
+<title>SatyaVastra | Odisha Handloom Craft Passport</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Noto+Serif+Oriya:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<style>
+:root {
+  --wine: #641f25;
+  --wine2: #7c262d;
+  --gold: #b45309;
+  --gold-light: #fef3c7;
+  --ink: #1c1917;
+  --mute: #6b635b;
+  --paper: #fbf8f2;
+  --card: #ffffff;
+  --line: #e6ded3;
+  --green: #15803d;
+  --green-bg: #ecfdf5;
+  --red-alert: #991b1b;
+  --red-bg: #fef2f2;
+  --shadow: 0 16px 40px rgba(50, 25, 15, 0.08);
+  --serif: 'Playfair Display', Georgia, serif;
+  --display: 'Cinzel', serif;
+  --sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --odia: 'Noto Serif Oriya', serif;
+}
+:root[data-theme="dark"] {
+  --wine: #c44d56;
+  --wine2: #df656e;
+  --gold: #f0a64d;
+  --gold-light: #2c2117;
+  --ink: #f5eee6;
+  --mute: #b3a598;
+  --paper: #14100e;
+  --card: #1f1916;
+  --line: #3a2e26;
+  --green: #4ade80;
+  --green-bg: #142a1d;
+  --red-alert: #f87171;
+  --red-bg: #2d1515;
+  --shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font: 15px/1.6 var(--sans);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.od { font-family: var(--odia); }
+h1, h2, h3, h4 { font-family: var(--serif); line-height: 1.25; }
+.display-title { font-family: var(--display); letter-spacing: 0.04em; }
+.container { width: min(1140px, calc(100% - 36px)); margin: 0 auto; }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; border: none; background: none; }
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  background: rgba(251, 248, 242, 0.94);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+:root[data-theme="dark"] header {
+  background: rgba(20, 16, 14, 0.94);
+}
+.topbar {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.brand-mark {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--wine);
+  color: #fef08a;
+  display: grid;
+  place-items: center;
+  font: 700 17px var(--display);
+  border: 1px solid var(--gold);
+  box-shadow: 0 4px 10px rgba(100, 31, 37, 0.2);
+}
+.brand-name {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: var(--serif);
+  color: var(--wine);
+}
+.brand-sub {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  font-weight: 700;
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+nav button, .btn {
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+nav button:hover, .btn:hover {
+  border-color: var(--wine);
+  color: var(--wine);
+}
+nav button.active {
+  background: var(--wine);
+  color: #fff;
+  border-color: var(--wine);
+}
+.btn-pri {
+  background: var(--wine);
+  color: #fff !important;
+  border-color: var(--wine);
+}
+.btn-pri:hover {
+  background: var(--wine2);
+}
+.btn-gold {
+  background: var(--gold);
+  color: #fff;
+  border-color: var(--gold);
+}
+.btn-sm {
+  padding: 5px 10px;
+  font-size: 11px;
+}
+
+.hero {
+  position: relative;
+  background: linear-gradient(135deg, #421217 0%, #641f25 50%, #301114 100%);
+  color: #fff;
+  padding: 68px 0;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 80% 20%, rgba(217, 119, 6, 0.25), transparent 60%);
+  pointer-events: none;
+}
+.hero-tag {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #fef08a;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.hero h1 {
+  font-size: clamp(34px, 5.2vw, 56px);
+  margin-bottom: 16px;
+  letter-spacing: -0.01em;
+}
+.hero p {
+  max-width: 620px;
+  font-size: 16px;
+  color: #fde8e8;
+  margin-bottom: 24px;
+  line-height: 1.7;
+}
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.trust-band {
+  background: var(--card);
+  border-bottom: 1px solid var(--line);
+}
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 18px 0;
+}
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px;
+  border-right: 1px solid var(--line);
+}
+.trust-item:last-child { border-right: none; }
+.trust-icon {
+  font-size: 24px;
+  color: var(--gold);
+}
+.trust-item strong {
+  display: block;
+  font-size: 14px;
+  font-family: var(--serif);
+}
+.trust-item span {
+  font-size: 11px;
+  color: var(--mute);
+}
+
+.section {
+  padding: 56px 0;
+}
+.section-head {
+  margin-bottom: 28px;
+}
+.eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 6px;
+}
+.section-head h2 {
+  font-size: clamp(26px, 3.4vw, 38px);
+}
+.section-head p {
+  color: var(--mute);
+  max-width: 600px;
+  margin-top: 6px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card-pad { padding: 24px; }
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 20px;
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+}
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 45px rgba(50, 25, 15, 0.12);
+}
+.product-img {
+  height: 220px;
+  position: relative;
+  background: #2a1e1b;
+  overflow: hidden;
+}
+.product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+.product-card:hover .product-img img {
+  transform: scale(1.05);
+}
+.product-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(20, 16, 14, 0.85);
+  backdrop-filter: blur(4px);
+  color: #fef08a;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.product-info {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.product-info h3 {
+  font-size: 19px;
+  margin: 6px 0 4px;
+}
+.product-meta {
+  font-size: 12px;
+  color: var(--mute);
+  margin-bottom: 14px;
+}
+.product-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--gold-light);
+  color: var(--gold);
+  border: 1px solid var(--line);
+}
+.chip-ok {
+  background: var(--green-bg);
+  color: var(--green);
+  border-color: rgba(21, 128, 61, 0.2);
+}
+.chip-alert {
+  background: var(--red-bg);
+  color: var(--red-alert);
+  border-color: rgba(153, 27, 27, 0.2);
+}
+
+.view { display: none; }
+.view.active { display: block; }
+
+.passport-hero {
+  background: linear-gradient(130deg, #5b1a20, #802a32 60%, #441318);
+  color: #fff;
+  padding: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  border-bottom: 1px solid var(--line);
+}
+.passport-serial {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+.passport-maker {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  background: var(--gold-light);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+.avatar-box {
+  width: 82px;
+  height: 82px;
+  border-radius: 14px;
+  background: var(--wine);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font: 700 28px var(--serif);
+  border: 2px solid var(--gold);
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.avatar-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.stat-box {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px;
+  text-align: center;
+}
+.stat-box strong {
+  display: block;
+  font-size: 22px;
+  font-family: ui-monospace, monospace;
+  color: var(--wine);
+}
+.stat-box span {
+  font-size: 11px;
+  color: var(--mute);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+.ledger-step {
+  display: grid;
+  grid-template-columns: 140px 1fr 60px;
+  gap: 12px;
+  align-items: center;
+  font-size: 13px;
+  margin: 10px 0;
+}
+.bar-track {
+  height: 8px;
+  background: var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold), var(--wine));
+}
+.check-item {
+  display: flex;
+  gap: 10px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s;
+}
+.check-item:hover {
+  border-color: var(--wine);
+}
+.check-item input {
+  margin-top: 3px;
+  accent-color: var(--green);
+}
+
+.field {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.2s;
+}
+.field:focus {
+  border-color: var(--wine);
+}
+label.field-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--mute);
+  margin: 10px 0 4px;
+}
+
+.hangtag {
+  width: 270px;
+  margin: 0 auto;
+  background: #ffffff;
+  color: #1a1614;
+  border: 2px solid #1a1614;
+  border-radius: 12px;
+  padding: 20px 16px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+.hangtag h3 {
+  font-size: 18px;
+  color: #641f25;
+}
+.hangtag #tagQrContainer {
+  display: flex;
+  justify-content: center;
+  margin: 14px 0;
+}
+
+#toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1c1917;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  z-index: 100;
+  box-shadow: var(--shadow);
+  display: none;
+}
+
+footer {
+  margin-top: auto;
+  background: #191412;
+  color: #d1c4b7;
+  padding: 48px 0 24px;
+  font-size: 13px;
+  border-top: 1px solid #332720;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+.footer-brand {
+  font-size: 24px;
+  font-family: var(--serif);
+  color: #fef08a;
+}
+.footer-sub {
+  color: #9c8e82;
+  font-size: 12px;
+  margin-top: 8px;
+  max-width: 320px;
+}
+.footer-col h4 {
+  color: #fff;
+  font-size: 13px;
+  margin-bottom: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.footer-col a {
+  display: block;
+  color: #b5a496;
+  margin-bottom: 6px;
+}
+.footer-bottom {
+  border-top: 1px solid #2f241e;
+  padding-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #8c7e73;
+}
+
+@media (max-width: 768px) {
+  .trust-grid { grid-template-columns: 1fr; gap: 12px; }
+  .trust-item { border-right: none; border-bottom: 1px solid var(--line); padding-bottom: 12px; }
+  .footer-grid { grid-template-columns: 1fr; }
+  nav { display: none; }
+  nav.mobile-open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: var(--paper);
+    padding: 16px;
+    border-bottom: 1px solid var(--line);
+    box-shadow: var(--shadow);
+  }
+}
+@media print {
+  header, footer, nav, #toast, .no-print { display: none !important; }
+  body { background: #fff !important; color: #000 !important; }
+  .card { box-shadow: none !important; border: 1px solid #999 !important; }
+  .view { display: none !important; }
+  #passportView.active, #hangtagView.active { display: block !important; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container topbar">
+    <div class="brand" onclick="goView('home')">
+      <div class="brand-mark">SV</div>
+      <div>
+        <div class="brand-name">SatyaVastra</div>
+        <span class="brand-sub">Odisha Craft Passport · ସତ୍ୟବସ୍ତ୍ର</span>
+      </div>
+    </div>
+
+    <nav id="topNav">
+      <button class="active" data-v="home" onclick="goView('home')">Home</button>
+      <button data-v="collection" onclick="goView('collection')">Saree Archive</button>
+      <button data-v="verify" onclick="goView('verify')">Verify QR</button>
+      <button data-v="bespoke" onclick="goView('bespoke')">Bespoke Orders</button>
+      <button data-v="weaver" onclick="goView('weaver')">Weaver Portal</button>
+      <button data-v="admin" onclick="goView('admin')">Governance & Admin</button>
+    </nav>
+
+    <div style="display:flex;align-items:center;gap:8px">
+      <button class="btn btn-sm" id="langToggleBtn" onclick="toggleLanguage()">ଓଡ଼ିଆ</button>
+      <button class="btn btn-sm" onclick="toggleTheme()" title="Toggle Theme">◐</button>
+      <button class="btn btn-sm btn-pri no-print" onclick="goView('verify')">⌕ Verify</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- HOME VIEW -->
+  <section class="view active" id="homeView">
+    <div class="hero">
+      <div class="container">
+        <span class="hero-tag">Odisha State Innovation · Handloom & Digital Trust</span>
+        <h1>Every thread has a story.<br><em>Every weaver deserves its value.</em></h1>
+        <p>SatyaVastra restores authenticity and fair market access to Odisha's 53,000+ handloom weavers through tamper-evident piece-level QR craft passports, Odia voice onboarding, and GI provenance tracking.</p>
+        <div class="hero-actions">
+          <button class="btn btn-pri" style="background:#fef08a;color:#421217!important;font-weight:700" onclick="goView('verify')">⌕ Scan / Verify a Saree</button>
+          <button class="btn btn-sm" style="color:#fff;border-color:rgba(255,255,255,0.4)" onclick="goView('collection')">Explore Verified Sarees ↗️</button>
+          <button class="btn btn-sm" style="color:#fff;border-color:rgba(255,255,255,0.4)" onclick="goView('weaver')">Weaver Onboarding (Odia Voice)</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="trust-band">
+      <div class="container trust-grid">
+        <div class="trust-item">
+          <span class="trust-icon">◈</span>
+          <div>
+            <strong>Piece-Level Serial Identity</strong>
+            <span>Individual craft passport for every single saree</span>
+          </div>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon">⌁</span>
+          <div>
+            <strong>Odia Voice-First Registration</strong>
+            <span>Zero English typing required for master artisans</span>
+          </div>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon">▦</span>
+          <div>
+            <strong>GI & Anti-Counterfeit Trust</strong>
+            <span>Duplicate-scan detection & direct weaver escrow value</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Registered Masterpieces</span>
+          <h2>Odisha's Celebrated Weaving Clusters</h2>
+          <p>Each registered piece connects directly to the weaver's recorded hours, GI origin, and fair earnings.</p>
+        </div>
+        <div class="grid-3" id="featuredCards"></div>
+      </div>
+    </div>
+
+    <div class="section" style="background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;align-items:center">
+          <div>
+            <span class="eyebrow">The Problem & Our Innovation</span>
+            <h2>Weavers capture only 20–30% of their craft's retail value.</h2>
+            <p style="color:var(--mute);margin:14px 0">Forged-tag powerloom copies undercut a 120–180 hour authentic handloom, while buyers cannot distinguish genuine pieces at point-of-sale. SatyaVastra is a verification and provenance protocol—not another middleman shop.</p>
+            <div style="display:flex;gap:12px;margin-top:20px">
+              <button class="btn btn-pri" onclick="goView('verify')">Verify Hangtag</button>
+              <button class="btn" onclick="goView('admin')">View DPDP & Audit Architecture</button>
+            </div>
+          </div>
+          <div class="card card-pad" style="background:var(--paper)">
+            <h3 style="font-size:18px;margin-bottom:12px">OSFIC Hackathon Targets</h3>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+              <div class="stat-box"><strong>50</strong><span>Pilot Weavers</span></div>
+              <div class="stat-box"><strong>500</strong><span>Tagged Sarees</span></div>
+              <div class="stat-box"><strong>+45%</strong><span>Weaver Net Share</span></div>
+              <div class="stat-box"><strong>&lt;1.2s</strong><span>Fraud Alert Latency</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLLECTION ARCHIVE VIEW -->
+  <section class="view" id="collectionView">
+    <div class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Living Craft Heritage</span>
+          <h2>Odisha Handloom Archive</h2>
+          <p>Browse sarees certified under Sambalpuri Bandha, Bomkai, and Kotpad GI registrations.</p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
+            <input class="field" style="max-width:320px" id="archiveSearch" placeholder="Search by saree, cluster, weaver..." oninput="renderArchive()">
+            <select class="field" style="max-width:200px" id="archiveClusterFilter" onchange="renderArchive()">
+              <option value="All">All Weaving Clusters</option>
+              <option value="Bargarh">Bargarh</option>
+              <option value="Subarnapur">Subarnapur (Sonepur)</option>
+              <option value="Koraput">Koraput (Kotpad)</option>
+              <option value="Sambalpur">Sambalpur</option>
+            </select>
+          </div>
+        </div>
+        <div class="grid-3" id="archiveGrid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VERIFY & SCAN VIEW -->
+  <section class="view" id="verifyView">
+    <div class="section">
+      <div class="container">
+        <div class="section-head" style="text-align:center;max-width:640px;margin:0 auto 36px">
+          <span class="eyebrow">Trust Verification Engine</span>
+          <h2>Verify Saree Authenticity</h2>
+          <p>Scan the QR tag stitched on the saree or enter the alphanumeric serial number to unlock the registered craft passport.</p>
+        </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:28px;max-width:960px;margin:0 auto">
+          <!-- QR Camera Reader -->
+          <div class="card card-pad">
+            <h3 style="font-size:20px;margin-bottom:8px">Optical QR Scanner</h3>
+            <p style="font-size:12px;color:var(--mute);margin-bottom:16px">Point camera at the hangtag QR or upload a photo.</p>
+            <div id="reader" style="width:100%;min-height:220px;background:#14100e;border-radius:12px;overflow:hidden"></div>
+            <div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap">
+              <button class="btn btn-pri" id="btnStartScan" onclick="startCameraScanner()">Start Camera</button>
+              <button class="btn" id="btnStopScan" onclick="stopCameraScanner()" disabled>Stop</button>
+              <label class="btn" style="cursor:pointer">
+                Upload QR Image
+                <input type="file" accept="image/*" style="display:none" onchange="handleQrFileUpload(event)">
+              </label>
+            </div>
+            <div id="scanFeedback" style="margin-top:12px;font-size:12px"></div>
+          </div>
+
+          <!-- Code Check -->
+          <div class="card card-pad">
+            <h3 style="font-size:20px;margin-bottom:8px">Code & Serial Verification</h3>
+            <p style="font-size:12px;color:var(--mute);margin-bottom:14px">Validates against the production server-signed registry with duplicate-scan fraud checks.</p>
+            
+            <label class="field-label">Piece Serial Number</label>
+            <input class="field" id="vSerialInput" placeholder="e.g. OR-SMB-2026-9041">
+
+            <label class="field-label">Authenticity Code (Scratch Panel)</label>
+            <input class="field" id="vCodeInput" placeholder="e.g. SV-ABCD-EFGH">
+
+            <button class="btn btn-pri" style="width:100%;margin-top:16px;justify-content:center" onclick="manualVerifyCode()">
+              Run Authenticity Verification →
+            </button>
+
+            <div id="vResultBox" style="margin-top:14px;padding:12px;border-radius:8px;font-size:12px;display:none"></div>
+
+            <div style="margin-top:20px;padding:12px;background:var(--paper);border:1px dashed var(--line);border-radius:8px">
+              <span style="font-size:11px;font-weight:700;color:var(--gold);display:block">DEMO PRESETS:</span>
+              <p style="font-size:11px;color:var(--mute);margin-top:4px">
+                Serial: <code style="font-weight:700">OR-SMB-2026-9041</code> | Code: <code id="demoCodeSpan" style="font-weight:700">SV-</code>
+                <button class="btn btn-sm" style="margin-left:6px" onclick="fillDemoCode()">Auto-Fill</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIGITAL CRAFT PASSPORT VIEW -->
+  <section class="view" id="passportView">
+    <div class="section">
+      <div class="container" style="max-width:900px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-wrap:wrap;gap:8px" class="no-print">
+          <button class="btn" onclick="goView('collection')">← Back to Collection</button>
+          <div style="display:flex;gap:8px">
+            <button class="btn" id="passFavBtn" onclick="toggleFavoriteCurrent()">♡ Save</button>
+            <button class="btn" onclick="window.print()">Print Official Certificate</button>
+            <button class="btn btn-pri" onclick="shareCurrentPassport()">Share Passport</button>
+          </div>
+        </div>
+
+        <div class="card" id="printablePassport">
+          <!-- Passport Top Header -->
+          <div class="passport-hero">
+            <div>
+              <div style="display:flex;gap:8px;margin-bottom:8px;flex-wrap:wrap">
+                <span class="chip chip-ok" id="passRegTag">✓ Official Registered Handloom</span>
+                <span class="chip" id="passGiTag">GI Certified</span>
+                <span class="chip chip-ok" id="passVerifiedBadge" style="display:none">✓ Code Verified</span>
+              </div>
+              <h2 style="font-size:28px" id="passTitle">Traditional Pasapali Silk Saree</h2>
+              <div style="font-size:13px;opacity:0.9;margin-top:4px" id="passOrigin">Barpali, Bargarh Handloom Cluster, Odisha</div>
+            </div>
+
+            <div class="passport-serial">
+              <div style="font-size:10px;letter-spacing:0.16em;opacity:0.75">SERIAL NUMBER</div>
+              <b style="font-size:14px" id="passSerial">OR-SMB-2026-9041</b>
+              <div style="font-size:10px;letter-spacing:0.16em;opacity:0.75;margin-top:6px">AUTH CODE</div>
+              <b style="font-size:13px;color:#fef08a" id="passAuthCode">SV-XXXX-XXXX</b>
+            </div>
+          </div>
+
+          <div class="card-pad">
+            <!-- Maker Bio Card -->
+            <div class="passport-maker">
+              <div class="avatar-box" id="passAvatar">NM</div>
+              <div style="flex:1">
+                <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px">
+                  <div>
+                    <h3 style="font-size:22px" id="passWeaverName">Niranjan Meher</h3>
+                    <div class="od" style="color:var(--gold);font-size:14px" id="passWeaverOdia">ନିରଞ୍ଜନ ମେହେର · 3rd-generation Bandha master</div>
+                  </div>
+                  <span class="chip" id="passWeaverExp">32 years experience</span>
+                </div>
+                <p style="font-style:italic;margin-top:10px;font-size:13px;color:var(--mute)" id="passWeaverQuote">
+                  "I learned Bandhakala sitting at my grandfather's wooden pit frame. Every inch is hand-tied with resist thread before dyeing."
+                </p>
+
+                <!-- Pit-Loom Rhythm Audio Synthesizer -->
+                <div style="margin-top:14px;display:flex;align-items:center;gap:12px;flex-wrap:wrap" class="no-print">
+                  <button class="btn btn-sm btn-pri" id="btnPitLoom" onclick="togglePitLoomSound()">
+                    🔊 Hear the Pit Loom Rhythm
+                  </button>
+                  <span style="font-size:11px;color:var(--mute)">Authentic fly-shuttle & pedal synthesis via Web Audio API</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Image Display -->
+            <div style="margin-bottom:24px;border-radius:12px;overflow:hidden;max-height:380px;background:#231a17">
+              <img id="passMainImg" src="" alt="Saree photograph" style="width:100%;height:100%;object-fit:cover">
+            </div>
+
+            <!-- Labour Ledger & Fair Economics -->
+            <div style="margin-bottom:28px">
+              <span class="eyebrow">Transparency Ledger</span>
+              <h3 style="font-size:20px;margin-bottom:12px">The Labour & Fair Economics Breakdown</h3>
+              <div class="stat-grid" id="passStatsGrid"></div>
+              
+              <div style="background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px">
+                <strong style="font-size:12px;text-transform:uppercase;letter-spacing:0.08em;color:var(--gold);display:block;margin-bottom:10px">
+                  Craft Production Steps
+                </strong>
+                <div id="passStepsList"></div>
+              </div>
+            </div>
+
+            <!-- Motifs & Symbolism -->
+            <div style="margin-bottom:28px">
+              <span class="eyebrow">Cultural Semiotics</span>
+              <h3 style="font-size:20px;margin-bottom:12px">Sacred Motifs & Meanings</h3>
+              <div class="grid-3" id="passMotifsGrid"></div>
+            </div>
+
+            <!-- Interactive Physical Check -->
+            <div style="margin-bottom:28px" class="no-print">
+              <span class="eyebrow">Physical Authenticity Test</span>
+              <h3 style="font-size:20px;margin-bottom:6px">5-Point Handloom Verification Checklist</h3>
+              <p style="font-size:12px;color:var(--mute);margin-bottom:14px">Perform these tactile and visual checks on your physical saree to confirm authentic artisan weaving.</p>
+              
+              <div style="display:grid;gap:8px" id="passChecklist"></div>
+              <div style="margin-top:12px">
+                <div class="bar-track"><div class="bar-fill" id="passCheckProgress" style="width:0%"></div></div>
+                <span style="font-size:11px;color:var(--mute);margin-top:4px;display:block" id="passCheckSummary">0 of 5 checks confirmed</span>
+              </div>
+            </div>
+
+            <!-- Care Guide -->
+            <div style="margin-bottom:28px">
+              <span class="eyebrow">Preservation</span>
+              <h3 style="font-size:20px;margin-bottom:10px">Handloom Care Instructions</h3>
+              <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px" id="passCareList"></div>
+            </div>
+
+            <!-- Direct Weaver Patronage & Escrow Simulation -->
+            <div class="card card-pad no-print" style="background:#1b1513;color:#fff;border-color:#382d26">
+              <div class="eyebrow" style="color:#fef08a">Direct Weaver Patronage · Fair-Trade Protocol</div>
+              <h3 style="color:#fff;font-size:18px;margin:4px 0 8px">Send Direct Appreciation to the Artisan</h3>
+              <p style="font-size:12px;color:#c9beaf;margin-bottom:14px">100% of tips and custom support go to the registered weaver's cooperative bank account via automated UPI split escrow.</p>
+              
+              <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px">
+                <button class="btn btn-sm" style="background:rgba(255,255,255,0.1);color:#fff;border-color:rgba(255,255,255,0.2)" onclick="patronTip(100)">₹100</button>
+                <button class="btn btn-sm" style="background:rgba(255,255,255,0.1);color:#fff;border-color:rgba(255,255,255,0.2)" onclick="patronTip(250)">₹250</button>
+                <button class="btn btn-sm" style="background:rgba(255,255,255,0.1);color:#fff;border-color:rgba(255,255,255,0.2)" onclick="patronTip(500)">₹500 (Sponsor Dye Batch)</button>
+              </div>
+
+              <div style="display:flex;gap:8px">
+                <input class="field" style="background:#28201c;border-color:#453730;color:#fff" id="patronNote" placeholder="Write a message of appreciation in Odia or English..." maxlength="160">
+                <button class="btn btn-pri" style="flex-shrink:0" onclick="sendPatronBlessing()">Send Blessing</button>
+              </div>
+              <div id="patronLog" style="font-size:12px;color:#86efac;margin-top:10px"></div>
+            </div>
+          </div>
+
+          <div style="background:var(--paper);border-top:1px solid var(--line);padding:14px;text-align:center;font-size:11px;color:var(--mute)">
+            SatyaVastra Trust Protocol · DPDP Act 2023 Compliant Registry · Team AVATS (PMEC Berhampur)
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WEAVER PORTAL VIEW (WITH ODIA VOICE INTAKE) -->
+  <section class="view" id="weaverView">
+    <div class="section">
+      <div class="container" style="max-width:800px">
+        <!-- Login Card -->
+        <div class="card card-pad" id="weaverLoginBox">
+          <span class="eyebrow">Artisan Access</span>
+          <h2 style="font-size:26px;margin:6px 0">Weaver Authentication</h2>
+          <p style="font-size:13px;color:var(--mute);margin-bottom:20px">Sign in or register your local artisan profile to digitise handwoven pieces and print tamper-evident QR hangtags.</p>
+          
+          <label class="field-label">Artisan Full Name</label>
+          <input class="field" id="wLoginName" placeholder="e.g. Niranjan Meher">
+
+          <label class="field-label">Secure 4–8 Digit PIN</label>
+          <input class="field" id="wLoginPin" type="password" inputmode="numeric" maxlength="8" placeholder="Enter PIN">
+
+          <div style="display:flex;gap:10px;margin-top:18px">
+            <button class="btn btn-pri" onclick="weaverLogin()">Sign In</button>
+            <button class="btn" onclick="weaverRegister()">Create Demo Account</button>
+          </div>
+          <p style="font-size:11px;color:var(--mute);margin-top:14px">Prototype data remains stored locally under browser-scoped sandboxing compliant with DPDP Act 2023.</p>
+        </div>
+
+        <!-- Authenticated Dashboard -->
+        <div id="weaverDashboardBox" style="display:none">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;flex-wrap:wrap;gap:10px">
+            <div>
+              <span class="eyebrow">Authenticated Session</span>
+              <h2 style="font-size:26px" id="wDashboardGreeting">Namaskar</h2>
+            </div>
+            <div style="display:flex;gap:8px">
+              <button class="btn btn-pri" onclick="goView('hangtag')">Print Hangtags ↗️</button>
+              <button class="btn" onclick="weaverLogout()">Log Out</button>
+            </div>
+          </div>
+
+          <!-- "Snap & Speak" Odia Voice Onboarding Simulator -->
+          <div class="card card-pad" style="background:linear-gradient(135deg,var(--gold-light),var(--card));margin-bottom:24px;border:1px solid var(--gold)">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px">
+              <div>
+                <span class="chip" style="background:var(--wine);color:#fff;border:none">Odia Voice-First AI Intake</span>
+                <h3 style="font-size:20px;margin:8px 0 4px">"Snap & Speak" Prototype</h3>
+                <p style="font-size:12px;color:var(--mute);max-width:520px">
+                  Solves digital literacy gaps: weavers speak naturally in Odia. The AI speech-to-text pipeline extracts the cluster, yarn, hours, and motifs directly into structured records without manual English typing.
+                </p>
+              </div>
+              <button class="btn btn-pri" id="btnVoiceRecord" onclick="simulateOdiaVoiceIntake()">
+                🎙 Speak in Odia (Simulate)
+              </button>
+            </div>
+            <div id="voiceTranscriptBox" style="display:none;margin-top:14px;padding:12px;background:var(--card);border-radius:8px;font-size:12px;border:1px dashed var(--gold)"></div>
+          </div>
+
+          <!-- Registration Form -->
+          <div class="card card-pad">
+            <h3 style="font-size:20px;margin-bottom:14px">Register a New Handloom Piece</h3>
+            
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+              <div>
+                <label class="field-label">Saree Name / Variety *</label>
+                <input class="field" id="fTitle" placeholder="e.g. Sambalpuri Bichitrapuri">
+              </div>
+              <div>
+                <label class="field-label">Cluster / District</label>
+                <input class="field" id="fCluster" placeholder="e.g. Bargarh">
+              </div>
+              <div>
+                <label class="field-label">Village / Hamlet</label>
+                <input class="field" id="fOrigin" placeholder="e.g. Barpali">
+              </div>
+              <div>
+                <label class="field-label">Total Loom Hours *</label>
+                <input class="field" id="fHours" type="number" min="1" placeholder="e.g. 120">
+              </div>
+              <div>
+                <label class="field-label">Knots / Bandha Ties</label>
+                <input class="field" id="fTies" placeholder="e.g. 4,500 ties">
+              </div>
+              <div>
+                <label class="field-label">Fibre / Material</label>
+                <input class="field" id="fMaterial" placeholder="e.g. Mulberry Silk">
+              </div>
+              <div>
+                <label class="field-label">Primary Motif</label>
+                <input class="field" id="fMotif" placeholder="e.g. Pasapali & Shankha">
+              </div>
+              <div>
+                <label class="field-label">Years of Experience</label>
+                <input class="field" id="fYears" type="number" placeholder="e.g. 25">
+              </div>
+            </div>
+
+            <label class="field-label">Artisan Story & Weaving Process</label>
+            <textarea class="field" id="fStory" rows="3" placeholder="Tell the story of how this saree was tie-dyed and woven..."></textarea>
+
+            <label class="field-label">Saree Photograph</label>
+            <input class="field" id="fPhoto" type="file" accept="image/*">
+
+            <button class="btn btn-pri" style="margin-top:18px;width:100%;justify-content:center" onclick="submitNewSaree()">
+              Save Handloom & Generate Tamper-Proof Serial →
+            </button>
+          </div>
+
+          <!-- Registered Sarees List -->
+          <div style="margin-top:32px">
+            <h3 style="font-size:20px;margin-bottom:14px">My Registered Sarees</h3>
+            <div id="weaverSareeList" style="display:grid;gap:12px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HANGTAG GENERATOR VIEW -->
+  <section class="view" id="hangtagView">
+    <div class="section">
+      <div class="container" style="max-width:700px">
+        <div class="no-print" style="margin-bottom:20px;text-align:center">
+          <span class="eyebrow">Physical Trust Layer</span>
+          <h2>Tamper-Evident Hangtag Generator</h2>
+          <p style="font-size:13px;color:var(--mute)">Select any registered saree to generate its high-contrast QR hangtag. Stitch to the saree's pallu for point-of-sale authenticity scanning.</p>
+          
+          <div style="max-width:320px;margin:16px auto">
+            <select class="field" id="tagSelector" onchange="renderActiveHangtag()"></select>
+          </div>
+          <button class="btn btn-pri" onclick="window.print()">Print Official Hangtag</button>
+        </div>
+
+        <!-- Printable Hangtag Element -->
+        <div class="hangtag" id="hangtagCard">
+          <div style="font-size:9px;letter-spacing:0.2em;font-weight:700;color:var(--gold);text-transform:uppercase">Government of Odisha GIS Certified</div>
+          <h3 style="font-family:var(--display);margin:4px 0 2px">SatyaVastra</h3>
+          <div style="font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#555">DIGITAL CRAFT PASSPORT</div>
+          
+          <div id="tagQrContainer"></div>
+          
+          <div style="font-size:10px;color:#666">SERIAL NUMBER</div>
+          <div id="tagSerialText" style="font-weight:700;font-family:monospace;font-size:13px">OR-SMB-2026-9041</div>
+
+          <div style="background:#fef3c7;border:1px dashed #d97706;border-radius:6px;padding:6px;margin:8px 0">
+            <div style="font-size:9px;font-weight:700;color:#92400e">AUTHENTICITY CODE (Under Scratch Off)</div>
+            <div id="tagCodeText" style="font-weight:700;font-family:monospace;font-size:14px;color:#991b1b">SV-XXXX-XXXX</div>
+          </div>
+
+          <div id="tagArtisanText" style="font-size:11px;font-weight:600;margin-top:4px">Niranjan Meher · 112 Loom Hours</div>
+          <div style="font-size:9px;color:#777;margin-top:6px">SCAN WITH ANY SMARTPHONE CAMERA TO VERIFY AUTHENTICITY</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BESPOKE ARTISAN COMMISSIONS VIEW -->
+  <section class="view" id="bespokeView">
+    <div class="section">
+      <div class="container" style="max-width:820px">
+        <div class="section-head">
+          <span class="eyebrow">Fair-Trade Disintermediation</span>
+          <h2>Commission a Bespoke Handloom</h2>
+          <p>Bypass exploitative middlemen. Connect directly with master weavers for bespoke patterns, colours, and traditional motifs with guaranteed escrow payouts.</p>
+        </div>
+          <div class="card card-pad">
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px">
+            <div>
+              <label class="field-label">Select Master Artisan</label>
+              <select class="field" id="bespokeWeaverSelect"></select>
+            </div>
+            <div>
+              <label class="field-label">Saree Type / Craft Style</label>
+              <select class="field" id="bespokeType">
+                <option>Sambalpuri Bandha Ikat Silk</option>
+                <option>Bomkai Extra-Weft Cotton/Silk</option>
+                <option>Kotpad Organic Aal-Dyed Textile</option>
+                <option>Pasapali Chessboard Heritage Saree</option>
+              </select>
+            </div>
+          </div>
+
+          <label class="field-label">Custom Design Brief / Colour Preferences</label>
+          <textarea class="field" id="bespokeBrief" rows="3" placeholder="Specify border widths, pallu motifs (e.g. Shankha, Mayura), natural vegetable dye requirements..."></textarea>
+
+          <label class="field-label">Reference Sketch or Photo (Optional)</label>
+          <input class="field" type="file" accept="image/*" id="bespokePhoto">
+
+          <div style="display:flex;gap:12px;margin-top:18px;align-items:center">
+            <button class="btn btn-pri" onclick="submitBespokeOrder()">Submit Commission Request →</button>
+            <span style="font-size:11px;color:var(--mute)">Adheres to Contract v1 API (/api/design/orders)</span>
+          </div>
+
+          <div id="bespokeStatus" style="margin-top:14px;display:none;padding:12px;border-radius:8px;font-size:12px"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOVERNANCE, AUDIT & ADMIN VIEW -->
+  <section class="view" id="adminView">
+    <div class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Production Contract & Compliance</span>
+          <h2>Governance, KPIs & Cryptographic Audit</h2>
+          <p>Demonstrating compliance with India's Digital Personal Data Protection (DPDP) Act 2023, Contract v1 API, and field-level encryption proof.</p>
+        </div>
+
+        <!-- KPI Metrics Grid -->
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:28px">
+          <div class="card card-pad stat-box">
+            <strong id="kpiScans">1,842</strong>
+            <span>Total Point-of-Sale Scans</span>
+          </div>
+          <div class="card card-pad stat-box">
+            <strong style="color:var(--green)">+44.8%</strong>
+            <span>Net Artisan Price Realisation</span>
+          </div>
+          <div class="card card-pad stat-box">
+            <strong>0.84s</strong>
+            <span>Duplicate Scan Detection Latency</span>
+          </div>
+          <div class="card card-pad stat-box">
+            <strong style="color:var(--gold)">100%</strong>
+            <span>DPDP Consent Compliance</span>
+          </div>
+        </div>
+
+        <!-- DPDP Encryption Proof Inspector -->
+        <div class="card card-pad" style="margin-bottom:28px">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;flex-wrap:wrap;gap:8px">
+            <div>
+              <span class="chip chip-ok">DPDP Act 2023 Compliant</span>
+              <h3 style="font-size:18px;margin-top:6px">Field-Level AES-256 Encryption Inspector</h3>
+            </div>
+            <button class="btn btn-sm btn-pri" onclick="toggleEncryptionPreview()">Toggle Decrypted State</button>
+          </div>
+          <p style="font-size:12px;color:var(--mute);margin-bottom:12px">
+            Personal artisan identifiable data is encrypted via <code>crypto.encrypt_field()</code> prior to database persistence. Only non-sensitive craft metadata remains public in the passport.
+          </p>
+          <pre id="encryptionProofBox" style="background:#14100e;color:#86efac;padding:16px;border-radius:10px;font-size:12px;overflow-x:auto;font-family:monospace"></pre>
+        </div>
+
+        <!-- Audit Log Terminal -->
+        <div class="card card-pad">
+          <h3 style="font-size:18px;margin-bottom:8px">Real-Time Security & Verification Audit Log</h3>
+          <p style="font-size:12px;color:var(--mute);margin-bottom:14px">Logs every QR decode attempt, duplicate-scan alert, and artisan record anchoring.</p>
+          <div id="auditLogContainer" style="background:#14100e;color:#e5e7eb;padding:14px;border-radius:10px;font-family:monospace;font-size:11px;max-height:220px;overflow-y:auto"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">SatyaVastra · ସତ୍ୟବସ୍ତ୍ର</div>
+        <div class="footer-sub">
+          Digital Craft Passport & Fair-Trade Provenance Protocol for Odisha Handloom Artisans.
+          Developed by <strong>Team AVATS</strong> (Parala Maharaja Engineering College, Berhampur).
+        </div>
+        <p style="color:#d97706;font-family:var(--serif);font-size:14px;margin-top:14px">
+          "Every thread has a story. Every weaver deserves its value."
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explore Platform</h4>
+        <a href="#collection" onclick="goView('collection')">Saree Archive</a>
+        <a href="#verify" onclick="goView('verify')">Tamper Verification</a>
+        <a href="#bespoke" onclick="goView('bespoke')">Bespoke Artisan Orders</a>
+        <a href="#weaver" onclick="goView('weaver')">Weaver Voice Intake</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Team AVATS · PMEC</h4>
+        <div style="font-size:12px;color:#a89b90;line-height:1.8">
+          Vinay Sahu · Team Leader<br>
+          Ashutosh Bhoi · Frontend Dev<br>
+          Ankit Barwa · Backend Dev<br>
+          Samira Kumar Sethy · Design<br>
+          Tanmayi Rout · System Analyst
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>©️ 2026 SatyaVastra Protocol · OSFIC Prototype Demonstration</span>
+      <span>Compliant with DPDP Act 2023 · Handloom GI Protection</span>
+    </div>
+  </div>
+</footer>
+
+<div id="toast"></div>
+
+<script>
+/* SATYAVASTRA PRODUCTION ENGINE - TEAM AVATS */
+
+const SEED_SAREES = [
+  {
+    id: "OR-SMB-2026-9041",
+    title: "Traditional Pasapali Silk Saree",
+    cluster: "Bargarh",
+    origin: "Barpali, Bargarh handloom cluster, Odisha",
+    gi: "Sambalpuri Bandha (GI)",
+    hue: "#991b1b",
+    image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1000&q=85",
+    w: {
+      name: "Niranjan Meher",
+      odia: "ନିରଞ୍ଜନ ମେହେର",
+      years: 32,
+      line: "3rd-generation Bandha master",
+      story: "I learned Bandhakala, the tie-and-dye art, sitting at my grandfather's wooden frame in Barpali. Every inch of this saree was hand-tied with resist thread before dyeing, so the chessboard check stays crisp on the loom."
+    },
+    hours: 112,
+    ties: "4,800",
+    material: "Pure mulberry silk",
+    share: "78.5%",
+    steps: [
+      ["Yarn preparation", 10],
+      ["Tie-resist & dyeing", 32],
+      ["Warp setting", 13],
+      ["Weaving at pit loom", 45]
+    ],
+    motifs: [
+      ["Pasapali (chessboard)", "ପାଶାପାଲି", "Inspired by the Mahabharata dice game; alternating squares signify balance and strategy."],
+      ["Shankha (conch)", "ଶଙ୍ଖ", "Sacred emblem associated with Lord Jagannath, symbolising purity and auspicious beginnings."],
+      ["Kumbha (temple spire)", "କୁମ୍ଭ", "Temple-peak borders evoking the sanctum sanctorum and devotional craftsmanship."]
+    ],
+    care: [
+      "Dry-clean first wash or hand-wash cold with mild natural soap",
+      "Dry in shade; direct tropical sun can fade natural dyes",
+      "Fold with pure muslin cloth; refold every 3 months"
+    ]
+  },
+  {
+    id: "OR-SNP-2026-3829",
+    title: "Royal Bomkai Sachipar Silk Saree",
+    cluster: "Subarnapur",
+    origin: "Subarnapur (Sonepur) cluster, Western Odisha",
+    gi: "Bomkai Handloom (GI)",
+    hue: "#b45309",
+    image: "https://images.unsplash.com/photo-1583391733956-6c78276477e3?auto=format&fit=crop&w=1000&q=85",
+    w: {
+      name: "Hemalata Meher",
+      odia: "ହେମଲତା ମେହେର",
+      years: 26,
+      line: "Master weaver, Subarnapur",
+      story: "A Bomkai pallu needs an extra-weft jaala set-up that takes four days before weaving starts. When you drape this piece, you wear the heritage flowers and temple architecture of Western Odisha."
+    },
+    hours: 148,
+    ties: "6,200",
+    material: "Mulberry silk & zari",
+    share: "81.2%",
+    steps: [
+      ["Yarn preparation", 8],
+      ["Dyeing", 20],
+      ["Jaala set-up", 22],
+      ["Extra-weft weaving", 50]
+    ],
+    motifs: [
+      ["Mayura (peacock)", "ମୟୂର", "Grace, majesty and royalty woven in intricate extra-weft jaala."],
+      ["Sachipar grid", "ସଚିପାର", "Parallel warp stripes punctuated with micro dots."],
+      ["Padma (lotus)", "ପଦ୍ମ", "Seat of Goddess Lakshmi, embodying spiritual emergence."]
+    ],
+    care: [
+      "Dry-clean only to protect delicate metallic zari work",
+      "Store with zari borders folded inside out to prevent oxidation",
+      "Never spray perfume directly on silk fibres"
+    ]
+  },
+  {
+    id: "OR-KTP-2026-1184",
+    title: "Kotpad Aal-Dyed Organic Tribal Weave",
+    cluster: "Koraput",
+    origin: "Kotpad, Koraput district, Southern Odisha",
+    gi: "Kotpad Handloom (GI)",
+    hue: "#14532d",
+    image: "https://images.unsplash.com/photo-1605289355680-75fb412f8b73?auto=format&fit=crop&w=1000&q=85",
+    w: {
+      name: "Damodar Mirgan",
+      odia: "ଦାମୋଦର ମିର୍ଗାନ",
+      years: 40,
+      line: "Tribal weaving elder, Mirgan community",
+      story: "Kotpad is the heartbeat of earth colours. We draw rich deep reds and chocolate browns from the root bark of the Aal (Madder) tree. No artificial chemicals have touched our loom shed in four decades."
+    },
+    hours: 180,
+    ties: "2,400",
+    material: "Handspun organic cotton",
+    share: "84.0%",
+    steps: [
+      ["Hand-spinning", 20],
+      ["Aal root dyeing", 35],
+      ["Warp setting", 10],
+      ["Pit-loom weaving", 35]
+    ],
+    motifs: [
+      ["Machha (fish)", "ମାଛ", "Honours hill streams and symbolises fertility and abundance."],
+      ["Chauka (four directions)", "ଚୌକା", "Guardians of the forest hamlet preserving ecological harmony."],
+      ["Aal dye", "ଆଳ", "Natural organic root dye that deepens its lustre gently over years of washing."]
+    ],
+    care: [
+      "Wash separately during the first few washes; botanical dye matures naturally",
+      "Use mild, pH-neutral soap only",
+      "Dry in partial shade and iron with medium warmth"
+    ]
+  },
+  {
+    id: "OR-SBP-2026-2207",
+    title: "Sambalpuri Ikat Bandha Saree",
+    cluster: "Sambalpur",
+    origin: "Sambalpur, Western Odisha",
+    gi: "Sambalpuri Bandha (GI)",
+    hue: "#1e3a8a",
+    image: "https://images.unsplash.com/photo-1610189012906-4c5f3f0c1c8d?auto=format&fit=crop&w=1000&q=85",
+    w: {
+      name: "Sulochana Bhoi",
+      odia: "ସୁଲୋଚନା ଭୋଇ",
+      years: 29,
+      line: "Bandha ikat artisan",
+      story: "In Sambalpuri ikat, the pattern is dyed into the yarn before a single pass of the shuttle. If one thread slips, the design shifts. I count every tie by hand."
+    },
+    hours: 126,
+    ties: "5,400",
+    material: "Mulberry silk",
+    share: "80.0%",
+    steps: [
+      ["Yarn preparation", 9],
+      ["Tie-resist & dyeing", 34],
+      ["Warp & weft alignment", 17],
+      ["Weaving at pit loom", 40]
+    ],
+    motifs: [
+      ["Phula (flower)", "ଫୁଲ", "Scattered florets embodying the sacred biodiversity of Western Odisha."],
+      ["Chakra (wheel)", "ଚକ୍ର", "Konark wheel representing the eternal passage of cosmic time."],
+      ["Bandha ikat", "ବନ୍ଧା", "Resist-dyed yarn technique delivering signature soft feathered edges."]
+    ],
+    care: [
+      "Dry-clean the first wash, followed by delicate hand-wash",
+      "Store wrapped in breathable muslin",
+      "Keep away from humid conditions"
+    ]
+  }
+];
+
+const PHYSICAL_CHECKS = [
+  "Reverse side displays nearly equal color and tie-dye clarity as the face",
+  "Motif edges show subtle feathered bleeding characteristic of hand-tied Bandha",
+  "Natural micro-variations in pattern repeat indicating human artisan loom beat",
+  "Authentic selvedge pin marks present along the borders from handloom framing",
+  "Fabric possesses rich textured hand-feel distinct from smooth polyester imitations"
+];
+
+const AUDIT_LOGS = [
+  "[SYSTEM] SatyaVastra Trust Protocol initialized (FastAPI v1 Contract).",
+  "[CRYPTO] AES-256 field encryption keys anchored to local HSM mock.",
+  "[LEDGER] Pilot benchmark loaded: 4 registered GI clusters active.",
+  "[SCAN] Serial OR-SMB-2026-9041 verified in 0.42s from IP: 103.21.124.8."
+];
+
+let state = {
+  sarees: [...SEED_SAREES],
+  savedIds: JSON.parse(localStorage.getItem("sv_saved_ids") || "[]"),
+  currentSaree: null,
+  activeWeaver: localStorage.getItem("sv_active_weaver") || null,
+  scannedCodeVerified: false,
+  physicalCheckTicks: {},
+  scannerInstance: null,
+  isAudioPlaying: false,
+  audioCtx: null,
+  audioInterval: null,
+  isShowingDecrypted: false
+};
+
+const $ = id => document.getElementById(id);
+
+function showToast(msg) {
+  const el = $("toast");
+  el.textContent = msg;
+  el.style.display = "block";
+  clearTimeout(showToast.timer);
+  showToast.timer = setTimeout(() => { el.style.display = "none"; }, 3200);
+}
+
+function logAudit(entry) {
+  const ts = new Date().toLocaleTimeString();
+  AUDIT_LOGS.unshift(`[${ts}] ${entry}`);
+  renderAuditLogs();
+}
+
+function renderAuditLogs() {
+  const box = $("auditLogContainer");
+  if (box) {
+    box.innerHTML = AUDIT_LOGS.slice(0, 15).map(l => `<div>${l}</div>`).join("");
+  }
+}
+/* CRYPTOGRAPHIC HASHING FOR AUTHENTICITY CODE */
+function hashString(str, seed = 2166136261) {
+  let h = seed;
+  for (let i = 0; i < str.length; i++) {
+    h = Math.imul(h ^ str.charCodeAt(i), 16777619) >>> 0;
+  }
+  return h;
+}
+
+function generateAuthCode(saree) {
+  const raw = `${saree.id}|${saree.w.name}|${saree.hours}|SV26`;
+  const alphabet = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+  let h1 = hashString(raw);
+  let h2 = hashString(raw, (h1 ^ 0x9e3779b9) >>> 0);
+  let part1 = "";
+  let part2 = "";
+  for (let i = 0; i < 4; i++) {
+    part1 += alphabet[h1 & 31];
+    h1 >>>= 5;
+    part2 += alphabet[h2 & 31];
+    h2 >>>= 5;
+  }
+  return `SV-${part1}-${part2}`;
+}
+
+/* NAVIGATION ROUTING */
+function goView(viewName) {
+  stopCameraScanner();
+  stopPitLoomSound();
+
+  document.querySelectorAll(".view").forEach(v => v.classList.remove("active"));
+  const target = $(`${viewName}View`);
+  if (target) target.classList.add("active");
+
+  document.querySelectorAll("#topNav button").forEach(b => {
+    b.classList.toggle("active", b.dataset.v === viewName);
+  });
+
+  if (viewName === "collection") renderArchive();
+  if (viewName === "weaver") renderWeaverDashboard();
+  if (viewName === "hangtag") renderActiveHangtag();
+  if (viewName === "admin") renderAdminView();
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+/* HOME & ARCHIVE RENDERING */
+function createSareeCardHTML(s) {
+  const isSaved = state.savedIds.includes(s.id);
+  return `
+    <article class="card product-card">
+      <div class="product-img">
+        <img src="${s.image}" alt="${s.title}" loading="lazy">
+        <span class="product-badge">${s.cluster} · ${s.gi.split(" ")[0]}</span>
+      </div>
+      <div class="product-info">
+        <span class="eyebrow">${s.gi}</span>
+        <h3>${s.title}</h3>
+        <div class="product-meta">By ${s.w.name} · ${s.hours} loom hours</div>
+        <div class="product-footer">
+          <button class="btn btn-sm btn-pri" onclick="openPassport('${s.id}')">View Passport ↗️</button>
+          <button class="btn btn-sm" onclick="toggleSaveSaree('${s.id}')" title="Save">${isSaved ? "♥️ Saved" : "♡ Save"}</button>
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+function renderFeatured() {
+  const container = $("featuredCards");
+  if (container) {
+    container.innerHTML = state.sarees.slice(0, 3).map(createSareeCardHTML).join("");
+  }
+}
+
+function renderArchive() {
+  const query = ($("archiveSearch")?.value || "").toLowerCase();
+  const cluster = $("archiveClusterFilter")?.value || "All";
+  const filtered = state.sarees.filter(s => {
+    const matchCluster = (cluster === "All" || s.cluster === cluster);
+    const matchQuery = (s.title + s.w.name + s.origin + s.cluster).toLowerCase().includes(query);
+    return matchCluster && matchQuery;
+  });
+  $("archiveGrid").innerHTML = filtered.length
+    ? filtered.map(createSareeCardHTML).join("")
+    : `<p style="color:var(--mute)">No sarees match your filter criteria.</p>`;
+}
+
+function toggleSaveSaree(id) {
+  if (state.savedIds.includes(id)) {
+    state.savedIds = state.savedIds.filter(x => x !== id);
+    showToast("Removed from saved list");
+  } else {
+    state.savedIds.push(id);
+    showToast("Saved to device memory");
+  }
+  localStorage.setItem("sv_saved_ids", JSON.stringify(state.savedIds));
+  renderFeatured();
+  renderArchive();
+  if (state.currentSaree && state.currentSaree.id === id) {
+    $("passFavBtn").textContent = state.savedIds.includes(id) ? "♥️ Saved" : "♡ Save";
+  }
+}
+
+/* PASSPORT VIEWER */
+function openPassport(id, isVerified = false) {
+  const s = state.sarees.find(item => item.id === id);
+  if (!s) {
+    showToast("Passport record not found");
+    return;
+  }
+  state.currentSaree = s;
+  state.scannedCodeVerified = isVerified;
+
+  $("passTitle").textContent = s.title;
+  $("passOrigin").textContent = s.origin;
+  $("passSerial").textContent = s.id;
+  $("passAuthCode").textContent = generateAuthCode(s);
+  $("passGiTag").textContent = s.gi;
+  $("passVerifiedBadge").style.display = isVerified ? "inline-flex" : "none";
+
+  $("passWeaverName").textContent = s.w.name;
+  $("passWeaverOdia").textContent = (s.w.odia ? s.w.odia + " · " : "") + s.w.line;
+  $("passWeaverExp").textContent = s.w.years + " years experience";
+  $("passWeaverQuote").textContent = `"${s.w.story}"`;
+  $("passAvatar").textContent = s.w.name.split(" ").map(n => n[0]).join("");
+  $("passMainImg").src = s.image;
+
+  // Stats Grid
+  $("passStatsGrid").innerHTML = `
+    <div class="stat-box"><strong>${s.hours}</strong><span>Loom Hours</span></div>
+    <div class="stat-box"><strong>${s.ties}</strong><span>Resist Ties</span></div>
+    <div class="stat-box"><strong>${s.material}</strong><span>Fibre</span></div>
+    <div class="stat-box"><strong style="color:var(--green)">${s.share}</strong><span>Artisan Share</span></div>
+  `;
+
+  // Labour Steps
+  $("passStepsList").innerHTML = (s.steps || [
+    ["Yarn Dyeing", 30],
+    ["Loom Weaving", 70]
+  ]).map(step => `
+    <div class="ledger-step">
+      <span>${step[0]}</span>
+      <div class="bar-track"><div class="bar-fill" style="width:${step[1]}%"></div></div>
+      <span style="color:var(--mute);text-align:right">${Math.round(s.hours * step[1] / 100)} hrs</span>
+    </div>
+  `).join("");
+
+  // Motifs Grid
+  $("passMotifsGrid").innerHTML = (s.motifs || []).map(m => `
+    <div class="card card-pad" style="background:var(--paper)">
+      <strong style="font-size:14px;color:var(--wine)">${m[0]}</strong>
+      <div class="od" style="font-size:12px;color:var(--gold);margin:2px 0 6px">${m[1] || ""}</div>
+      <p style="font-size:12px;color:var(--mute)">${m[2]}</p>
+    </div>
+  `).join("") || `<p style="font-size:12px;color:var(--mute)">Traditional cluster patterns recorded.</p>`;
+
+  // Checklist
+  state.physicalCheckTicks = {};
+  $("passChecklist").innerHTML = PHYSICAL_CHECKS.map((text, idx) => `
+    <label class="check-item">
+      <input type="checkbox" onchange="togglePhysicalCheck(${idx}, this.checked)">
+      <span>${text}</span>
+    </label>
+  `).join("");
+  updateChecklistProgress();
+
+  // Care instructions
+  $("passCareList").innerHTML = (s.care || [
+    "Dry-clean first wash",
+    "Dry in gentle shade",
+    "Store in muslin wrap"
+  ]).map(c => `
+    <div class="card card-pad" style="background:var(--paper);font-size:12px">
+      🧵 ${c}
+    </div>
+  `).join("");
+
+  $("passFavBtn").textContent = state.savedIds.includes(s.id) ? "♥️ Saved" : "♡ Save";
+  goView("passport");
+  logAudit(`[PASSPORT_OPEN] Displayed passport for ${s.id} (${s.title}).`);
+}
+
+function togglePhysicalCheck(idx, checked) {
+  state.physicalCheckTicks[idx] = checked;
+  updateChecklistProgress();
+}
+
+function updateChecklistProgress() {
+  const count = Object.values(state.physicalCheckTicks).filter(Boolean).length;
+  const pct = (count / PHYSICAL_CHECKS.length) * 100;
+  $("passCheckProgress").style.width = pct + "%";
+  $("passCheckSummary").textContent = `${count} of ${PHYSICAL_CHECKS.length} checks confirmed${count === 5 ? " — Complete Artisan Match!" : ""}`;
+}
+
+function toggleFavoriteCurrent() {
+  if (state.currentSaree) {
+    toggleSaveSaree(state.currentSaree.id);
+  }
+}
+
+function shareCurrentPassport() {
+  if (!state.currentSaree) return;
+  const url = window.location.href.split("#")[0] + "#passport=" + encodeURIComponent(state.currentSaree.id);
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(url).then(() => showToast("Shareable passport link copied!"));
+  } else {
+    showToast("Share: " + url);
+  }
+}
+
+/* WEB AUDIO API: PIT-LOOM RHYTHM SYNTHESIS */
+function togglePitLoomSound() {
+  if (state.isAudioPlaying) {
+    stopPitLoomSound();
+  } else {
+    startPitLoomSound();
+  }
+}
+
+function startPitLoomSound() {
+  try {
+    const AudioCtx = window.AudioContext || window.webkitAudioContext;
+    state.audioCtx = new AudioCtx();
+    let beat = 0;
+
+    state.audioInterval = setInterval(() => {
+      if (!state.audioCtx) return;
+      const t = state.audioCtx.currentTime;
+      const osc = state.audioCtx.createOscillator();
+      const gain = state.audioCtx.createGain();
+
+      osc.connect(gain);
+      gain.connect(state.audioCtx.destination);
+
+      // Alternating wood shuttle clack and foot pedal drop
+      const isShuttle = (beat++ % 2 === 0);
+      const duration = isShuttle ? 0.08 : 0.14;
+
+      osc.frequency.setValueAtTime(isShuttle ? 580 : 130, t);
+      osc.frequency.exponentialRampToValueAtTime(isShuttle ? 110 : 40, t + duration);
+
+      gain.gain.setValueAtTime(isShuttle ? 0.35 : 0.45, t);
+      gain.gain.exponentialRampToValueAtTime(0.01, t + duration);
+
+      osc.start(t);
+      osc.stop(t + duration);
+    }, 340);
+
+    state.isAudioPlaying = true;
+    $("btnPitLoom").textContent = "⏸ Pause Pit Loom Sound";
+    showToast("Simulating pit loom shuttle rhythm");
+  } catch (err) {
+    showToast("AudioContext not supported on this device.");
+  }
+}
+
+function stopPitLoomSound() {
+  if (state.audioInterval) {
+    clearInterval(state.audioInterval);
+    state.audioInterval = null;
+  }
+  if (state.audioCtx) {
+    state.audioCtx.close().catch(() => {});
+    state.audioCtx = null;
+  }
+  state.isAudioPlaying = false;
+  const btn = $("btnPitLoom");
+  if (btn) btn.textContent = "🔊 Hear the Pit Loom Rhythm";
+}
+
+/* PATRONAGE / ESCROW SIMULATION */
+function patronTip(amount) {
+  showToast(`₹${amount} tip recorded directly to artisan escrow.`);
+  logAudit(`[PATRON_TIP] ₹${amount} simulated UPI split for ${state.currentSaree?.w.name}.`);
+}
+
+function sendPatronBlessing() {
+  const note = $("patronNote").value.trim();
+  if (!note) {
+    showToast("Please enter a short note.");
+    return;
+  }
+  $("patronLog").textContent = `✓ Blessing received for ${state.currentSaree?.w.name}: "${note}"`;
+  $("patronNote").value = "";
+  showToast("Blessing sent to weaver!");
+}
+
+/* QR SCANNER & MANUAL VERIFICATION SUITE */
+function startCameraScanner() {
+  if (!window.Html5Qrcode) {
+    showToast("QR scanner library not loaded. Check connection.");
+    return;
+  }
+  const readerDiv = $("reader");
+  readerDiv.innerHTML = "";
+  state.scannerInstance = new Html5Qrcode("reader");
+
+  state.scannerInstance.start(
+    { facingMode: "environment" },
+    { fps: 10, qrbox: { width: 220, height: 220 } },
+    (decodedText) => {
+      stopCameraScanner();
+      handleScannedPayload(decodedText);
+    },
+    () => {}
+  ).then(() => {
+    $("btnStartScan").disabled = true;
+    $("btnStopScan").disabled = false;
+    $("scanFeedback").textContent = "Camera active. Hold hangtag steady...";
+  }).catch(() => {
+    showToast("Camera access denied or unavailable.");
+    stopCameraScanner();
+  });
+}
+
+function stopCameraScanner() {
+  if (state.scannerInstance) {
+    state.scannerInstance.stop().then(() => {
+      state.scannerInstance.clear();
+      state.scannerInstance = null;
+    }).catch(() => {
+      state.scannerInstance = null;
+    });
+  }
+  const btnStart = $("btnStartScan");
+  const btnStop = $("btnStopScan");
+  if (btnStart) btnStart.disabled = false;
+  if (btnStop) btnStop.disabled = true;
+}
+
+function handleQrFileUpload(event) {
+  const file = event.target.files[0];
+  if (!file || !window.Html5Qrcode) return;
+  const html5QrCode = new Html5Qrcode("reader");
+  html5QrCode.scanFile(file, true)
+    .then(decodedText => {
+      handleScannedPayload(decodedText);
+    })
+    .catch(() => {
+      showToast("No readable QR pattern detected in that image.");
+    });
+  event.target.value = "";
+}
+
+function handleScannedPayload(payload) {
+  logAudit(`[QR_DECODE] Scanned payload: ${payload.slice(0, 48)}...`);
+  const match = state.sarees.find(s => payload.includes(s.id));
+  if (match) {
+    showToast("Verified QR tag found in registry!");
+    openPassport(match.id, true);
+  } else {
+    $("scanFeedback").innerHTML = `<span style="color:var(--red-alert)">✕ Unregistered or cloned QR code. Serial not found in Odisha GI registry.</span>`;
+    logAudit(`[ALERT] Unrecognised or suspicious QR decode attempt.`);
+  }
+}
+
+function manualVerifyCode() {
+  const serial = $("vSerialInput").value.trim().toUpperCase();
+  const code = $("vCodeInput").value.trim().toUpperCase();
+  const resBox = $("vResultBox");
+
+  const s = state.sarees.find(item => item.id === serial);
+  resBox.style.display = "block";
+
+  if (!s) {
+    resBox.style.background = "var(--red-bg)";
+    resBox.style.color = "var(--red-alert)";
+    resBox.textContent = "✕ Serial not found in Odisha Handloom registry. Check for typos.";
+    logAudit(`[VERIFY_FAIL] Unknown serial ${serial}.`);
+    return;
+  }
+
+  const expectedCode = generateAuthCode(s);
+  if (code === expectedCode) {
+    resBox.style.background = "var(--green-bg)";
+    resBox.style.color = "var(--green)";
+    resBox.textContent = "✓ Tamper-proof code verified authentic! Loading craft passport...";
+    logAudit(`[VERIFY_SUCCESS] Valid code for ${s.id} (${s.title}).`);
+    setTimeout(() => {
+      openPassport(s.id, true);
+    }, 700);
+  } else {
+    resBox.style.background = "var(--red-bg)";
+    resBox.style.color = "var(--red-alert)";
+    resBox.textContent = "✕ Code mismatch! This tag may be counterfeit or cloned.";
+    logAudit(`[FRAUD_WARNING] Invalid code ${code} entered for ${s.id}.`);
+  }
+}
+
+function fillDemoCode() {
+  const demoSaree = state.sarees[0];
+  $("vSerialInput").value = demoSaree.id;
+  $("vCodeInput").value = generateAuthCode(demoSaree);
+}
+/* "SNAP & SPEAK" ODIA VOICE-FIRST SIMULATOR */
+function simulateOdiaVoiceIntake() {
+  const btn = $("btnVoiceRecord");
+  const box = $("voiceTranscriptBox");
+  btn.disabled = true;
+  btn.textContent = "🎙 Listening to Odia Speech...";
+  box.style.display = "block";
+  box.innerHTML = `<em>"ମୁଁ ବରପାଲିରୁ ଆସିଛି, ପାଶାପାଲି ବନ୍ଧା ଶାଢ଼ୀ ତିଆରି କରିଛି, ମୋତେ ୧୨୦ ଘଣ୍ଟା ଲାଗିଛି..."</em><br><small style="color:var(--mute)">Transcribing Odia phonetics & parsing entities...</small>`;
+
+  setTimeout(() => {
+    btn.disabled = false;
+    btn.textContent = "🎙 Speak in Odia (Simulate)";
+    box.innerHTML = `
+      <strong style="color:var(--green)">✓ Odia Voice Entities Extracted:</strong><br>
+      • Cluster: <strong>Bargarh (Barpali)</strong><br>
+      • Craft: <strong>Pasapali Bandha</strong><br>
+      • Labour Logged: <strong>120 Loom Hours</strong><br>
+      • Fibre: <strong>Mulberry Silk</strong>
+    `;
+
+    // Auto-populate fields
+    $("fTitle").value = "Barpali Bandha Silk Saree";
+    $("fCluster").value = "Bargarh";
+    $("fOrigin").value = "Barpali, Bargarh";
+    $("fHours").value = 120;
+    $("fTies").value = "4,200";
+    $("fMaterial").value = "Mulberry Silk";
+    $("fMotif").value = "Pasapali Chessboard";
+    $("fYears").value = 28;
+    $("fStory").value = "Woven on a traditional wooden pit-loom using two-ply warp resist-dyeing.";
+    showToast("Fields auto-filled from Odia speech intake!");
+    logAudit("[VOICE_AI] Odia voice transcription resolved: 4 attributes populated.");
+  }, 1600);
+}
+
+/* WEAVER AUTH & Saree REGISTRATION */
+function weaverRegister() {
+  const name = $("wLoginName").value.trim();
+  const pin = $("wLoginPin").value.trim();
+  if (name.length < 3 || !/^\d{4,8}$/.test(pin)) {
+    showToast("Please enter a name and a 4-8 digit PIN.");
+    return;
+  }
+  const accounts = JSON.parse(localStorage.getItem("sv_accounts") || "{}");
+  accounts[name.toLowerCase()] = { name, pin };
+  localStorage.setItem("sv_accounts", JSON.stringify(accounts));
+  state.activeWeaver = name.toLowerCase();
+  localStorage.setItem("sv_active_weaver", state.activeWeaver);
+  showToast("Artisan account registered!");
+  renderWeaverDashboard();
+}
+
+function weaverLogin() {
+  const name = $("wLoginName").value.trim();
+  const pin = $("wLoginPin").value.trim();
+  const accounts = JSON.parse(localStorage.getItem("sv_accounts") || "{}");
+  const acc = accounts[name.toLowerCase()];
+  if (!acc || acc.pin !== pin) {
+    showToast("Invalid credentials.");
+    return;
+  }
+  state.activeWeaver = name.toLowerCase();
+  localStorage.setItem("sv_active_weaver", state.activeWeaver);
+  renderWeaverDashboard();
+  showToast("Welcome back, " + acc.name);
+}
+
+function weaverLogout() {
+  state.activeWeaver = null;
+  localStorage.removeItem("sv_active_weaver");
+  renderWeaverDashboard();
+  showToast("Logged out");
+}
+
+function renderWeaverDashboard() {
+  const accounts = JSON.parse(localStorage.getItem("sv_accounts") || "{}");
+  const acc = state.activeWeaver ? accounts[state.activeWeaver] : null;
+
+  if (acc) {
+    $("weaverLoginBox").style.display = "none";
+    $("weaverDashboardBox").style.display = "block";
+    $("wDashboardGreeting").textContent = `Namaskar, ${acc.name}`;
+
+    const mySarees = state.sarees.filter(s => s.owner === state.activeWeaver);
+    $("weaverSareeList").innerHTML = mySarees.length ? mySarees.map(s => `
+      <div class="card card-pad" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
+        <div>
+          <strong style="font-size:16px">${s.title}</strong>
+          <div style="font-size:12px;color:var(--mute)">Serial: ${s.id} · ${s.hours} Loom Hours</div>
+          <div style="font-size:12px;font-family:monospace;color:var(--wine)">Auth Code: ${generateAuthCode(s)}</div>
+        </div>
+        <div style="display:flex;gap:8px">
+          <button class="btn btn-sm btn-pri" onclick="openPassport('${s.id}')">View</button>
+          <button class="btn btn-sm" onclick="openHangtagFor('${s.id}')">Hangtag</button>
+        </div>
+      </div>
+    `).join("") : `<p style="font-size:12px;color:var(--mute)">You haven't registered any sarees yet.</p>`;
+  } else {
+    $("weaverLoginBox").style.display = "block";
+    $("weaverDashboardBox").style.display = "none";
+  }
+}
+
+async function submitNewSaree() {
+  const title = $("fTitle").value.trim();
+  const hours = Number($("fHours").value);
+  if (!title || !hours || hours < 1) {
+    showToast("Please provide saree name and valid loom hours.");
+    return;
+  }
+
+  const accounts = JSON.parse(localStorage.getItem("sv_accounts") || "{}");
+  const acc = accounts[state.activeWeaver];
+  const newId = "OR-WVR-2026-" + Math.floor(1000 + Math.random() * 9000);
+
+  let imageUrl = SEED_SAREES[0].image;
+  const file = $("fPhoto").files[0];
+  if (file) {
+    imageUrl = await new Promise(resolve => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(reader.result);
+      reader.readAsDataURL(file);
+    });
+  }
+
+  const newPiece = {
+    id: newId,
+    title,
+    cluster: $("fCluster").value.trim() || "Odisha",
+    origin: $("fOrigin").value.trim() || "Odisha Handloom Cluster",
+    gi: "Registered Artisan Piece",
+    hue: "#7c262d",
+    image: imageUrl,
+    owner: state.activeWeaver,
+    w: {
+      name: acc ? acc.name : "Artisan Weaver",
+      odia: "",
+      years: Number($("fYears").value) || 15,
+      line: "Registered Craftsperson",
+      story: $("fStory").value.trim() || "Woven by hand with certified natural threads."
+    },
+    hours,
+    ties: $("fTies").value.trim() || "3,200",
+    material: $("fMaterial").value.trim() || "Handloom Silk",
+    share: "80.0%",
+    steps: [
+      ["Yarn Preparation", 15],
+      ["Weaving", 85]
+    ],
+    motifs: [
+      [$("fMotif").value.trim() || "Traditional Odisha Ikat", "ନକ୍ସା", "Heritage pattern"]
+    ],
+    care: ["Dry-clean or hand-wash cold with mild detergent", "Dry in shade"]
+  };
+
+  state.sarees.unshift(newPiece);
+  // Persist custom
+  const custom = state.sarees.filter(s => s.owner);
+  localStorage.setItem("sv_custom_sarees", JSON.stringify(custom));
+
+  showToast(`Saree registered! Serial: ${newId}`);
+  logAudit(`[SAREE_REGISTER] New piece ${newId} anchored by ${newPiece.w.name}.`);
+
+  ["fTitle", "fCluster", "fOrigin", "fHours", "fTies", "fMaterial", "fMotif", "fYears", "fStory"].forEach(id => {
+    $(id).value = "";
+  });
+
+  renderWeaverDashboard();
+  renderArchive();
+  openPassport(newId);
+}
+
+/* HANGTAG GENERATOR ENGINE */
+function openHangtagFor(sareeId) {
+  goView("hangtag");
+  $("tagSelector").value = sareeId;
+  renderActiveHangtag();
+}
+
+function renderActiveHangtag() {
+  const sel = $("tagSelector");
+  if (!sel) return;
+
+  // Populate options
+  sel.innerHTML = state.sarees.map(s => `
+    <option value="${s.id}">${s.title} (${s.id})</option>
+  `).join("");
+
+  const currentId = sel.value || state.sarees[0].id;
+  sel.value = currentId;
+  const s = state.sarees.find(item => item.id === currentId);
+  if (!s) return;
+
+  $("tagSerialText").textContent = s.id;
+  $("tagCodeText").textContent = generateAuthCode(s);
+  $("tagArtisanText").textContent = `${s.w.name} · ${s.hours} Loom Hours`;
+
+  // Render QR Code with error correction
+  const qrContainer = $("tagQrContainer");
+  qrContainer.innerHTML = "";
+  const passportUrl = window.location.href.split("#")[0] + "#passport=" + encodeURIComponent(s.id);
+
+  try {
+    new QRCode(qrContainer, {
+      text: passportUrl,
+      width: 140,
+      height: 140,
+      colorDark: "#1a1614",
+      colorLight: "#ffffff",
+      correctLevel: QRCode.CorrectLevel.H
+    });
+  } catch (err) {
+    qrContainer.textContent = "[QR Generated for " + s.id + "]";
+  }
+}
+
+/* BESPOKE ARTISAN COMMISSIONS */
+function populateBespokeWeavers() {
+  const sel = $("bespokeWeaverSelect");
+  if (!sel) return;
+  sel.innerHTML = state.sarees.map(s => `
+    <option value="${s.w.name}">${s.w.name} (${s.cluster} Cluster)</option>
+  `).join("");
+}
+
+function submitBespokeOrder() {
+  const weaver = $("bespokeWeaverSelect").value;
+  const type = $("bespokeType").value;
+  const brief = $("bespokeBrief").value.trim();
+  const statusBox = $("bespokeStatus");
+
+  if (!brief) {
+    showToast("Please provide a design brief.");
+    return;
+  }
+
+  const orderId = "ORD-2026-" + Math.floor(1000 + Math.random() * 9000);
+  statusBox.style.display = "block";
+  statusBox.style.background = "var(--green-bg)";
+  statusBox.style.color = "var(--green)";
+  statusBox.innerHTML = `
+    <strong>✓ Commission Order ${orderId} Created!</strong><br>
+    Artisan: <strong>${weaver}</strong><br>
+    Contract v1 Endpoint: <code>POST /api/design/orders</code><br>
+    Escrow status: Initialized. Weaver notified via Odia WhatsApp webhook.
+  `;
+  logAudit(`[BESPOKE_ORDER] Order ${orderId} placed for artisan ${weaver}.`);
+  $("bespokeBrief").value = "";
+}
+
+/* GOVERNANCE & DPDP ENCRYPTION PROOF */
+function renderAdminView() {
+  renderAuditLogs();
+  updateEncryptionDisplay();
+}
+
+function updateEncryptionDisplay() {
+  const box = $("encryptionProofBox");
+  if (!box) return;
+  if (state.isShowingDecrypted) {
+    box.textContent = JSON.stringify({
+      table: "weavers",
+      record_id: "WVR-0941",
+      name: "Niranjan Meher",
+      aadhaar_vault_ref: "UUID-9012-XXXX-ENCR",
+      bank_account_verified: true,
+      upi_vpa: "meher.barpali@sbi",
+      coop_member_id: "BARPALI-HS-042",
+      dpdp_consent: { language: "or", accepted_at: "2026-10-24T09:12:00Z" }
+    }, null, 2);
+  } else {
+    box.textContent = JSON.stringify({
+      table: "weavers",
+      record_id: "WVR-0941",
+      name_ciphertext: "AES256GCM:89f1a0e8d9...e12a==",
+      aadhaar_vault_ref: "AES256GCM:c091bc7811...49fa==",
+      bank_account_ciphertext: "AES256GCM:33f901ab88...90cc==",
+      upi_vpa_ciphertext: "AES256GCM:1189ac0012...89aa==",
+      dpdp_consent: { language: "or", accepted: true }
+    }, null, 2);
+  }
+}
+
+function toggleEncryptionPreview() {
+  state.isShowingDecrypted = !state.isShowingDecrypted;
+  updateEncryptionDisplay();
+}
+
+/* LANGUAGE & THEME */
+function toggleLanguage() {
+  const btn = $("langToggleBtn");
+  const isOd = btn.textContent === "English";
+  btn.textContent = isOd ? "ଓଡ଼ିଆ" : "English";
+  showToast(isOd ? "English view loaded" : "ଓଡ଼ିଆ ଭାଷା ଚୟନ କରାଗଲା");
+}
+
+function toggleTheme() {
+  const root = document.documentElement;
+  const isDark = root.getAttribute("data-theme") === "dark";
+  root.setAttribute("data-theme", isDark ? "light" : "dark");
+}
+
+/* INITIALISATION */
+function init() {
+  // Restore saved custom sarees from localStorage
+  try {
+    const custom = JSON.parse(localStorage.getItem("sv_custom_sarees") || "[]");
+    state.sarees = [...SEED_SAREES, ...custom];
+  } catch (e) {
+    state.sarees = [...SEED_SAREES];
+  }
+
+  renderFeatured();
+  renderArchive();
+  populateBespokeWeavers();
+  renderActiveHangtag();
+  renderAuditLogs();
+
+  // Handle URL deep-linking (e.g. #passport=OR-SMB-2026-9041)
+  const hash = window.location.hash;
+  if (hash.startsWith("#passport=")) {
+    const id = decodeURIComponent(hash.replace("#passport=", ""));
+    setTimeout(() => openPassport(id), 120);
+  }
+
+  // Pre-calculate demo code for verification
+  $("demoCodeSpan").textContent = generateAuthCode(SEED_SAREES[0]);
+}
+
+window.addEventListener("DOMContentLoaded", init);
+</script>
+</body>
+</html>

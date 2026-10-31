@@ -1,0 +1,582 @@
+{
+  "users": [
+    {
+      "id": "USR-ADMIN-01",
+      "username": "admin",
+      "role": "admin",
+      "password_hash": "ca71deb795373bc64dd9aff6231b764d472f75c153287688b59c780a6cf3d237",
+      "created_at": "2026-10-30T17:02:08.505Z"
+    },
+    {
+      "id": "USR-WVR-0941",
+      "username": "niranjan_meher",
+      "role": "weaver",
+      "password_hash": "ae83d68cc20e300f8090004fe336c01e8c3b3a19c4ebb87180988733c5b9cac4",
+      "created_at": "2026-10-30T17:02:08.505Z"
+    },
+    {
+      "id": "USR-WVR-3829",
+      "username": "hemalata_meher",
+      "role": "weaver",
+      "password_hash": "b8e32a2d63b69a553870d931901714aedf28fc0a6fe6b82a852ea5ef405ea448",
+      "created_at": "2026-10-30T17:02:08.505Z"
+    },
+    {
+      "id": "USR-WVR-1184",
+      "username": "damodar_mirgan",
+      "role": "weaver",
+      "password_hash": "ff9f84f5d8e9d2b2000968cc529e78b2d6f24d400bcca12ab88125173cbc3662",
+      "created_at": "2026-10-30T17:02:08.505Z"
+    },
+    {
+      "id": "USR-WVR-2207",
+      "username": "sulochana_bhoi",
+      "role": "weaver",
+      "password_hash": "79abc035667f5d2a1e65a5a3093a09f8305c8a82196e0b7fca2a5ecdf4ae3f08",
+      "created_at": "2026-10-30T17:02:08.505Z"
+    }
+  ],
+  "weavers": [
+    {
+      "id": "WVR-0941",
+      "user_id": "USR-WVR-0941",
+      "name_encrypted": "AES256GCM:weIMZB4spHpnMop8Ydb2np6rtPDgtU3X9+tsDhBc9jfr4wZ+X2rfU5S9",
+      "phone_encrypted": "AES256GCM:FdPJf43e2d2c7pH2fZdBc5WlbNpoyExlRtuWySXbX2pXlGWGXlM=",
+      "address_encrypted": "AES256GCM:PoqA7FvI2dUfHozEKzHtYvEY1uwk2hswpooA1VxWoGkTQG1aLMydhIawnFZeDHZXx4E1uA==",
+      "voice_transcript_encrypted": "",
+      "cluster": "Bargarh",
+      "village": "Barpali",
+      "experience_years": 32,
+      "lineage": "3rd-generation Bandha master",
+      "public_story": "I learned Bandhakala, the tie-and-dye art, sitting at my grandfather's wooden frame in Barpali. Every inch of this saree was hand-tied with resist thread before dyeing.",
+      "id_verified": true,
+      "id_type": "Weaver ID Card",
+      "verified_by": "Odisha State Handloom Directorate",
+      "verified_at": "2026-10-30T17:02:08.505Z",
+      "created_at": "2026-10-30T17:02:08.505Z"
+    },
+    {
+      "id": "WVR-3829",
+      "user_id": "USR-WVR-3829",
+      "name_encrypted": "AES256GCM:/GYnq8+A31zjowhhK9Tf6WhJfqWhuETMjp/7HW7S7mnJO1oWHou2APd8",
+      "phone_encrypted": "AES256GCM:BEA+chiVBH+kP3JNFC5ujZQbNVNZA+LzMwWTCJeMk3EGvTH8J/s=",
+      "address_encrypted": "AES256GCM:Aq63lZBkaZ6Zja4xiwgCQeNYqz4rlgnBMMrjrK7qB9Wdi4BxTG/8BKcTwHZ+zajopWgmIbkidw==",
+      "voice_transcript_encrypted": "",
+      "cluster": "Subarnapur",
+      "village": "Sonepur",
+      "experience_years": 26,
+      "lineage": "Master weaver, Subarnapur",
+      "public_story": "A Bomkai pallu needs an extra-weft jaala set-up that takes four days before weaving starts. When you drape this piece, you wear the heritage flowers and temple architecture.",
+      "id_verified": true,
+      "id_type": "Cooperative Attestation",
+      "verified_by": "Subarnapur Primary Weavers Cooperative Society",
+      "verified_at": "2026-10-30T17:02:08.505Z",
+      "created_at": "2026-10-30T17:02:08.505Z"
+    },
+    {
+      "id": "WVR-1184",
+      "user_id": "USR-WVR-1184",
+      "name_encrypted": "AES256GCM:27C8B/9NkiVo+LHD0cUBlUGry2ekzGgjJW4+fzXnrDag3q6VZX3CvazX",
+      "phone_encrypted": "AES256GCM:Jb5LK4X8TIS+exXWubv1WNxn5zUc82JgM0+jEIOubPJMuypRY5U=",
+      "address_encrypted": "AES256GCM:xXebIm1G/2HNGVqNxtJy+YNpiAxSGdVuBr8Gyh92BFRztlixTGLf6m2Dk/Hf1vFsPHoy",
+      "voice_transcript_encrypted": "",
+      "cluster": "Koraput",
+      "village": "Kotpad",
+      "experience_years": 40,
+      "lineage": "Tribal weaving elder, Mirgan community",
+      "public_story": "Kotpad is the heartbeat of earth colours. We draw rich deep reds and chocolate browns from the root bark of the Aal (Madder) tree. No artificial chemicals have touched our loom.",
+      "id_verified": true,
+      "id_type": "Weaver ID Card",
+      "verified_by": "Koraput Integrated Tribal Development Agency",
+      "verified_at": "2026-10-30T17:02:08.505Z",
+      "created_at": "2026-10-30T17:02:08.505Z"
+    },
+    {
+      "id": "WVR-2207",
+      "user_id": "USR-WVR-2207",
+      "name_encrypted": "AES256GCM:7yXdJvpzU/Fs/6M5YR69fC3ErzCqaqlUpHyI6bKU6EZIwCzax8u/hImf",
+      "phone_encrypted": "AES256GCM:LTdbYdINbM++TlONK2ZMvImlcCt+8BBwGbxMPV4ZYuI0m0LBkiI=",
+      "address_encrypted": "AES256GCM:cVwM+A25pq2Tm9Ym0pyu00f5Ha39ZGxmPPXT6yxdbQUuv8S/CEvUe/Fb0Ij0ynMCs3AKod39Aa4=",
+      "voice_transcript_encrypted": "",
+      "cluster": "Sambalpur",
+      "village": "Sambalpur",
+      "experience_years": 29,
+      "lineage": "Bandha ikat artisan",
+      "public_story": "In Sambalpuri ikat, the pattern is dyed into the yarn before a single pass of the shuttle. If one thread slips, the design shifts. I count every tie by hand.",
+      "id_verified": true,
+      "id_type": "Cooperative Attestation",
+      "verified_by": "Sambalpur Handloom Apex Society",
+      "verified_at": "2026-10-30T17:02:08.505Z",
+      "created_at": "2026-10-30T17:02:08.505Z"
+    }
+  ],
+  "sarees": [
+    {
+      "id": "OR-SMB-2026-9041",
+      "weaver_id": "WVR-0941",
+      "title": "Traditional Pasapali Silk Saree",
+      "cluster": "Bargarh",
+      "origin": "Barpali, Bargarh cluster, Odisha",
+      "gi_tag": "Sambalpuri Bandha (GI)",
+      "material": "Pure Mulberry Silk",
+      "loom_hours": 112,
+      "ties": "4,800",
+      "artisan_share": "78.5%",
+      "image_public_url": "/images/pasapali.jpg",
+      "story": "I learned Bandhakala, the tie-and-dye art, sitting at my grandfather's wooden frame in Barpali. Every inch of this saree was hand-tied with resist thread before dyeing.",
+      "steps": [
+        [
+          "Yarn preparation",
+          10
+        ],
+        [
+          "Tie-resist & dyeing",
+          32
+        ],
+        [
+          "Warp setting",
+          13
+        ],
+        [
+          "Weaving at pit loom",
+          45
+        ]
+      ],
+      "motifs": [
+        [
+          "Pasapali (chessboard)",
+          "ପାଶାପାଲି",
+          "Inspired by the Mahabharata dice game; alternating squares signify balance and strategy."
+        ],
+        [
+          "Shankha (conch)",
+          "ଶଙ୍ଖ",
+          "Sacred emblem associated with Lord Jagannath, symbolising purity and auspicious beginnings."
+        ],
+        [
+          "Kumbha (temple spire)",
+          "କୁମ୍ଭ",
+          "Temple-peak borders evoking the sanctum sanctorum and devotional craftsmanship."
+        ]
+      ],
+      "care": [
+        "Dry-clean first wash or hand-wash cold with mild natural soap",
+        "Dry in shade; avoid direct tropical sun",
+        "Fold with pure muslin cloth; refold every 3 months"
+      ],
+      "weave_fingerprint": [
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05
+      ],
+      "created_at": "2026-10-30T17:02:08.505Z"
+    },
+    {
+      "id": "OR-SNP-2026-3829",
+      "weaver_id": "WVR-3829",
+      "title": "Royal Bomkai Sachipar Silk Saree",
+      "cluster": "Subarnapur",
+      "origin": "Sonepur, Subarnapur cluster, Odisha",
+      "gi_tag": "Bomkai Handloom (GI)",
+      "material": "Mulberry Silk & Zari",
+      "loom_hours": 148,
+      "ties": "6,200",
+      "artisan_share": "81.2%",
+      "image_public_url": "/images/bomkai.jpg",
+      "story": "A Bomkai pallu needs an extra-weft jaala set-up that takes four days before weaving starts. When you drape this piece, you wear the heritage flowers and temple architecture.",
+      "steps": [
+        [
+          "Yarn preparation",
+          8
+        ],
+        [
+          "Dyeing",
+          20
+        ],
+        [
+          "Jaala set-up",
+          22
+        ],
+        [
+          "Extra-weft weaving",
+          50
+        ]
+      ],
+      "motifs": [
+        [
+          "Mayura (peacock)",
+          "ମୟୂର",
+          "Grace, majesty and royalty woven in intricate extra-weft jaala."
+        ],
+        [
+          "Sachipar grid",
+          "ସଚିପାର",
+          "Parallel warp stripes punctuated with micro dots."
+        ],
+        [
+          "Padma (lotus)",
+          "ପଦ୍ମ",
+          "Seat of Goddess Lakshmi, embodying spiritual emergence."
+        ]
+      ],
+      "care": [
+        "Dry-clean first wash or hand-wash cold with mild natural soap",
+        "Dry in shade; avoid direct tropical sun",
+        "Fold with pure muslin cloth; refold every 3 months"
+      ],
+      "weave_fingerprint": [
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05
+      ],
+      "created_at": "2026-10-30T17:02:08.505Z"
+    },
+    {
+      "id": "OR-KTP-2026-1184",
+      "weaver_id": "WVR-1184",
+      "title": "Kotpad Aal-Dyed Organic Tribal Weave",
+      "cluster": "Koraput",
+      "origin": "Kotpad, Koraput cluster, Odisha",
+      "gi_tag": "Kotpad Handloom (GI)",
+      "material": "Handspun Organic Cotton",
+      "loom_hours": 180,
+      "ties": "2,400",
+      "artisan_share": "84.0%",
+      "image_public_url": "/images/kotpad.jpg",
+      "story": "Kotpad is the heartbeat of earth colours. We draw rich deep reds and chocolate browns from the root bark of the Aal (Madder) tree. No artificial chemicals have touched our loom.",
+      "steps": [
+        [
+          "Hand-spinning",
+          20
+        ],
+        [
+          "Aal root dyeing",
+          35
+        ],
+        [
+          "Warp setting",
+          10
+        ],
+        [
+          "Pit-loom weaving",
+          35
+        ]
+      ],
+      "motifs": [
+        [
+          "Machha (fish)",
+          "ମାଛ",
+          "Honours hill streams and symbolises fertility and abundance."
+        ],
+        [
+          "Chauka (four directions)",
+          "ଚୌକା",
+          "Guardians of the forest hamlet preserving ecological harmony."
+        ],
+        [
+          "Aal dye",
+          "ଆଳ",
+          "Natural organic root dye that deepens its lustre gently over years of washing."
+        ]
+      ],
+      "care": [
+        "Dry-clean first wash or hand-wash cold with mild natural soap",
+        "Dry in shade; avoid direct tropical sun",
+        "Fold with pure muslin cloth; refold every 3 months"
+      ],
+      "weave_fingerprint": [
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05
+      ],
+      "created_at": "2026-10-30T17:02:08.505Z"
+    },
+    {
+      "id": "OR-SBP-2026-2207",
+      "weaver_id": "WVR-2207",
+      "title": "Sambalpuri Ikat Bandha Saree",
+      "cluster": "Sambalpur",
+      "origin": "Sambalpur, Sambalpur cluster, Odisha",
+      "gi_tag": "Sambalpuri Bandha (GI)",
+      "material": "Mulberry Silk",
+      "loom_hours": 126,
+      "ties": "5,400",
+      "artisan_share": "80.0%",
+      "image_public_url": "/images/sambalpuri.jpg",
+      "story": "In Sambalpuri ikat, the pattern is dyed into the yarn before a single pass of the shuttle. If one thread slips, the design shifts. I count every tie by hand.",
+      "steps": [
+        [
+          "Yarn preparation",
+          9
+        ],
+        [
+          "Tie-resist & dyeing",
+          34
+        ],
+        [
+          "Warp & weft alignment",
+          17
+        ],
+        [
+          "Weaving at pit loom",
+          40
+        ]
+      ],
+      "motifs": [
+        [
+          "Phula (flower)",
+          "ଫୁଲ",
+          "Scattered florets embodying the sacred biodiversity of Western Odisha."
+        ],
+        [
+          "Chakra (wheel)",
+          "ଚକ୍ର",
+          "Konark wheel representing the eternal passage of cosmic time."
+        ],
+        [
+          "Bandha ikat",
+          "ବନ୍ଧା",
+          "Resist-dyed yarn technique delivering signature soft feathered edges."
+        ]
+      ],
+      "care": [
+        "Dry-clean first wash or hand-wash cold with mild natural soap",
+        "Dry in shade; avoid direct tropical sun",
+        "Fold with pure muslin cloth; refold every 3 months"
+      ],
+      "weave_fingerprint": [
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05
+      ],
+      "created_at": "2026-10-30T17:02:08.505Z"
+    }
+  ],
+  "tags": [
+    {
+      "id": "TAG-0941",
+      "saree_id": "OR-SMB-2026-9041",
+      "serial": "OR-SMB-2026-9041",
+      "auth_code": "SV-L9VG-27QP",
+      "server_signature": "ebc351e8f717016e",
+      "issued_at": "2026-10-30T17:02:08.505Z",
+      "expires_at": "2027-02-27T17:02:08.505Z",
+      "renewal_count": 0,
+      "is_active": true
+    },
+    {
+      "id": "TAG-3829",
+      "saree_id": "OR-SNP-2026-3829",
+      "serial": "OR-SNP-2026-3829",
+      "auth_code": "SV-W34V-6BJR",
+      "server_signature": "64ab954ef3c1e9e8",
+      "issued_at": "2026-10-30T17:02:08.505Z",
+      "expires_at": "2027-02-27T17:02:08.505Z",
+      "renewal_count": 0,
+      "is_active": true
+    },
+    {
+      "id": "TAG-1184",
+      "saree_id": "OR-KTP-2026-1184",
+      "serial": "OR-KTP-2026-1184",
+      "auth_code": "SV-4DXZ-EE7D",
+      "server_signature": "551532bdee0016a1",
+      "issued_at": "2026-10-30T17:02:08.505Z",
+      "expires_at": "2027-02-27T17:02:08.505Z",
+      "renewal_count": 0,
+      "is_active": true
+    },
+    {
+      "id": "TAG-2207",
+      "saree_id": "OR-SBP-2026-2207",
+      "serial": "OR-SBP-2026-2207",
+      "auth_code": "SV-X6YJ-A5HK",
+      "server_signature": "a5d14dfdcabd92a5",
+      "issued_at": "2026-10-30T17:02:08.505Z",
+      "expires_at": "2027-02-27T17:02:08.505Z",
+      "renewal_count": 0,
+      "is_active": true
+    }
+  ],
+  "scans": [
+    {
+      "id": 3,
+      "tag_id": "TAG-3829",
+      "serial": "OR-SNP-2026-3829",
+      "scanned_at": "2026-10-30T17:04:00.719Z",
+      "ip_address": "127.0.0.1",
+      "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.8059.12 Safari/537.36",
+      "is_fraud_flagged": false,
+      "fraud_reason": null,
+      "detection_latency_ms": 0.1,
+      "buyer_fee_simulated": 200
+    },
+    {
+      "id": 2,
+      "tag_id": "TAG-0941",
+      "serial": "OR-SMB-2026-9041",
+      "scanned_at": "2026-10-30T17:03:45.884Z",
+      "ip_address": "127.0.0.1",
+      "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.8059.12 Safari/537.36",
+      "is_fraud_flagged": false,
+      "fraud_reason": null,
+      "detection_latency_ms": 0.51,
+      "buyer_fee_simulated": 200
+    },
+    {
+      "id": 1,
+      "tag_id": "TAG-0941",
+      "serial": "OR-SMB-2026-9041",
+      "scanned_at": "2026-10-30T16:02:08.505Z",
+      "ip_address": "103.21.124.8",
+      "detection_latency_ms": 18.4,
+      "buyer_fee_simulated": 200,
+      "is_fraud_flagged": false,
+      "fraud_reason": null
+    }
+  ],
+  "orders": [
+    {
+      "id": "ORD-2026-216C",
+      "weaver_id": "WVR-0941",
+      "craft_type": "Sambalpuri Bandha Ikat Silk",
+      "brief": "Traditional chessboard Pasapali checks in deep crimson silk with Shankha temple border.",
+      "buyer_identifier": "Artisan Patron",
+      "status": "Escrow_Initialized",
+      "escrow_amount": 15000,
+      "created_at": "2026-10-30T17:04:25.697Z"
+    }
+  ],
+  "audit_logs": [
+    {
+      "id": 4,
+      "event_type": "BESPOKE_ORDER",
+      "details": "Commission ORD-2026-216C created in escrow",
+      "actor_id": "WVR-0941",
+      "actor_role": "buyer",
+      "ip_address": "127.0.0.1",
+      "timestamp": "2026-10-30T17:04:25.698Z"
+    },
+    {
+      "id": 3,
+      "event_type": "SCAN_SUCCESS",
+      "details": "Verified serial OR-SNP-2026-3829 in 0.1ms",
+      "actor_id": "CLIENT",
+      "actor_role": "visitor",
+      "ip_address": "127.0.0.1",
+      "latency_seconds": 0.0001,
+      "timestamp": "2026-10-30T17:04:00.720Z"
+    },
+    {
+      "id": 2,
+      "event_type": "SCAN_SUCCESS",
+      "details": "Verified serial OR-SMB-2026-9041 in 0.51ms",
+      "actor_id": "CLIENT",
+      "actor_role": "visitor",
+      "ip_address": "127.0.0.1",
+      "latency_seconds": 0.00051,
+      "timestamp": "2026-10-30T17:03:45.885Z"
+    },
+    {
+      "id": 1,
+      "event_type": "SYSTEM_BOOTSTRAP",
+      "details": "SatyaVastra Trust Protocol initialized (FastAPI v1 Contract)",
+      "actor_id": "SYSTEM",
+      "actor_role": "admin",
+      "ip_address": "127.0.0.1",
+      "latency_seconds": 0.012,
+      "timestamp": "2026-10-30T17:02:08.505Z"
+    }
+  ],
+  "consents": [
+    {
+      "id": 1,
+      "weaver_id": "WVR-0941",
+      "language": "or",
+      "purpose": "Handloom Craft Passport Registration & DPDP Provenance",
+      "agreed": true,
+      "timestamp": "2026-10-30T17:02:08.505Z",
+      "consent_hash": "2658220c-589d-4470-b87c-864a526982a9"
+    },
+    {
+      "id": 2,
+      "weaver_id": "WVR-3829",
+      "language": "or",
+      "purpose": "Handloom Craft Passport Registration & DPDP Provenance",
+      "agreed": true,
+      "timestamp": "2026-10-30T17:02:08.505Z",
+      "consent_hash": "42bc41d6-48ed-49f1-96fd-e5b5daf56fc9"
+    },
+    {
+      "id": 3,
+      "weaver_id": "WVR-1184",
+      "language": "or",
+      "purpose": "Handloom Craft Passport Registration & DPDP Provenance",
+      "agreed": true,
+      "timestamp": "2026-10-30T17:02:08.505Z",
+      "consent_hash": "b5ad1cc2-19d9-44d0-aedf-f6b8b2334f6c"
+    },
+    {
+      "id": 4,
+      "weaver_id": "WVR-2207",
+      "language": "or",
+      "purpose": "Handloom Craft Passport Registration & DPDP Provenance",
+      "agreed": true,
+      "timestamp": "2026-10-30T17:02:08.505Z",
+      "consent_hash": "2b87f4c0-5010-4c7b-b0ef-b1f6f3802bb3"
+    }
+  ],
+  "deletion_requests": []
+}

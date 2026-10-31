@@ -1,0 +1,6 @@
+{
+  "name": "SatyaVastra | Odisha Handloom Craft Passport",
+  "description": "Tamper-evident piece-level QR craft passports, Odia voice intake, GI provenance tracking, and DPDP-compliant handloom verification protocol for Odisha artisans.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
